@@ -21,9 +21,9 @@ class DatabaseManager:
                 cls._connection_pool = pooling.MySQLConnectionPool(
                     pool_name="sportpro_pool",
                     pool_size=5,
-                    host=os.getenv("DB_HOST", "localhost"),
-                    user=os.getenv("DB_USER", "root"),
-                    password=os.getenv("DB_PASSWORD", ""),
+                    host=os.getenv("DB_HOST", "plspm_db"),
+                    user=os.getenv("DB_USER", "usuario_app"),
+                    password=os.getenv("DB_PASSWORD", "contrasena_app"),
                     database=os.getenv("DB_NAME", "aplicacion_deportiva"),
                     pool_reset_session=True
                 )

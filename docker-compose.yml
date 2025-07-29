@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 version: "3.8"
 
 services:
@@ -32,3 +33,30 @@ services:
 
 volumes:
   db_data:
+=======
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: plspm_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: aplicacion_deportiva
+      MYSQL_USER: usuario_app
+      MYSQL_PASSWORD: contrasena_app
+    volumes:
+      - ./DB/aplicacion_deportiva.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3307:3307"
+
+  pythonapp:
+    build: .
+    container_name: plspm_app
+    depends_on:
+      - mysql
+    ports:
+      - "8505:8505"
+    volumes:
+      - .:/app
+    environment:
+      DATABASE_URL: mysql+pymysql://usuario_app:contrasena_app@mysql/aplicacion_deportiva
+>>>>>>> Stashed changes

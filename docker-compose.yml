@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 version: "3.8"
 
 services:
@@ -34,6 +35,8 @@ services:
 volumes:
   db_data:
 =======
+=======
+>>>>>>> Stashed changes
 services:
   mysql:
     image: mysql:8.0
@@ -59,4 +62,7 @@ services:
       - .:/app
     environment:
       DATABASE_URL: mysql+pymysql://usuario_app:contrasena_app@mysql/aplicacion_deportiva
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

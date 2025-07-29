@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Usa una imagen base de Python
 FROM python:3.12-slim
 
@@ -20,6 +21,8 @@ CMD ["python", "app.py"]
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 FROM python:3.9-slim
 
 WORKDIR /app
@@ -31,6 +34,9 @@ COPY . .
 
 CMD ["python", "main.py"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

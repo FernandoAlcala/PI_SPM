@@ -20,7 +20,7 @@ class SportProApp:
 
     def _configure_page(self):
         """Configura la página principal"""
-        self.page.title = "SportPro - Gestión Deportiva"
+        self.page.title = "SPM - Sport Performance Metrics"
         self.page.theme_mode = ft.ThemeMode.LIGHT
         self.page.bgcolor = "#FFFFFF"
         self.page.padding = 0

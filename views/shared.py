@@ -268,7 +268,7 @@ def show_register(page: ft.Page, db: DatabaseManager):
                 )
             ])
         
-        page.update()
+    page.update()
 
     def on_register(e):
         """Maneja el evento de registro"""
